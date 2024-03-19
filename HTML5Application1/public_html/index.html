@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Özgün Form Tasarımı</title>
+  <style>
+    .form-container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+
+    .error-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .form-group input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form onsubmit="validateForm(event)">
+      <div class="form-group">
+        <label for="ad">Adiniz:</label>
+        <input type="text" id="ad" required pattern="[A-Za-z]+" title="Sadece harf kullanabilirsiniz">
+      </div>
+
+      <div class="form-group">
+        <label for="soyad">Soyadiniz:</label>
+        <input type="text" id="soyad" required pattern="[A-Za-z]+" title="Sadece harf kullanabilirsiniz">
+      </div>
+
+      <div class="form-group">
+        <label for="kullaniciAdi">Kullanici Adiniz:</label>
+        <input type="text" id="kullaniciAdi" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefon">Telefon Numarasi:</label>
+        <input type="tel" id="telefon" required pattern="[0-9]+" title="Sadece rakam kullanabilirsiniz">
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail Adresi:</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="adres">Adres:</label>
+        <textarea id="adres" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="il">Sehir:</label>
+        <input type="text" id="il" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cinsiyet">Cinsiyet:</label>
+        <select id="cinsiyet" required>
+          <option value="">Seciniz</option>
+          <option value="erkek">Erkek</option>
+          <option value="kadın">Kadin</option>
+          <option value="diğer">Diger</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+     
+<label for="dogumTarihi">Dogum Tarihiniz:</label>
+   
+<input type="date" id="dogumTarihi" required>
+      
+      </div
+
+      </
+  </div>
+
+<div class="form-group">  
+<input type="submit" value="Gonder">
+      
+      </div
+
+      </
+
+     
+</div>
+    
+    </form
+
+    </
+
+   
+</form>
+  
+  </div
+
+  </
+
+ 
+</div>
+
+
+<script>
+   
+
+    function validateForm(event
+
+    function validateForm(event) {
+      event.preventDefault();
+      // Burada formun doğrulama işlemleri gerçekleştirilebilir
+    }
+  </script>
+
+</body
+
+</
+</body>
+
+</html
+
+</
+</html>
